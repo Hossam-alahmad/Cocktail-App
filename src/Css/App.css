@@ -1,0 +1,38 @@
+.App {
+    text-align: center;
+}
+.App .loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    margin: 30px auto;
+    border-radius: 50%;
+    border-color: #eee #eee green green;
+    animation: loading 0.5s linear infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: green;
+}
+.App .home .cocktail {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.App .navbar .nav a {
+    color: #000;
+}
+.App .navbar .nav a.active {
+    color: green;
+    font-weight: 500;
+}
+.App .home .cocktail:hover {
+    background-color: #eee;
+}
